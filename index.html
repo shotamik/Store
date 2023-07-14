@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="avenir fonts/stylesheet.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header-div">
+            <div class="brand-search">
+                <img src="images/logo-colored.jpg" alt="">
+                <div class="searchbar">
+                    <form class="searchb">
+                        <input class="search" type="text" placeholder="   Search">
+                    </form>
+                    <div class="allbtndiv" onclick="categories()">
+                        <div class="allcat">
+                            <button class="allbtn" >All Categories</button>
+                            <img class="expand" src="images/expand_more.jpg" alt="">
+                        </div>
+
+                        <div id="myCategories" class="categoriess">
+                            <button cl>Automobiles</button>
+                            <button>Clothes and wear</button>
+                            <button>Home interiors</button>
+                            <button>Computer and tech</button>
+                            <button>Tools and equipment</button>
+                            <button>Animal and pets</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <button class="searchbtn">Search</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="icons-header">
+                <div class="header-buttons">
+                    <img src="images/person.jpg" alt="">
+                    <span>Profile</span>
+                </div>
+                <div class="header-buttons">
+                    <img src="images/message.jpg" alt="">
+                    <span>Message</span>
+
+                </div>
+                <div class="header-buttons">
+                    <img src="images/favorite.jpg" alt="">
+                    <span>Orders</span>
+
+                </div>
+                <div class="header-buttons">
+                    <img src="images/shopping_cart.jpg" alt="">
+                    <span>My cart</span>
+                </div>
+            </div>
+        </div>
+        <div class="categoriesbar">
+            <div class="navbar">
+                <img src="images/menu.jpg" alt="">
+                <nav class="navb">
+                    <ul class="nav-ul">
+                        <li>
+                            <a href="#">All category</a>
+                        </li>
+                        <li>
+                            <a href="#">Hot offers</a>
+                        </li>
+                        <li>
+                            <a href="#">Gift Boxes</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu item</a>
+                        </li>
+                        <li onclick="myFun()">
+                            <a class="help-btn" href="#">Help  V</a>
+                        </li>
+                    </ul>
+                    
+                        <div id="myHelp" class="help">
+                                <button>Deals and Offers</button>
+                                <button>Send Quote</button>
+                                <button>Extra Services</button>
+                        </div>
+                    
+    
+                </nav>
+                <div class="abroad-btn">
+                    <div class="valutte-div">
+                        <button class="valutte-btn" onclick="Valutte()">English, USD</button>
+                        <div id="myValutte" class="valutte">
+                            <button class="shipping-btn">German, EUR</button>
+                            <button class="shipping-btn">Russian, RUB</button>
+                        </div>
+                    </div>
+    
+                    <div class="valutte-div">
+                        <button class="shipping-btn" onclick="shipping()">Ship To Germany</button>
+                        <div id="myShip" class="shipping">
+                            <button class="shipping-btn">Ship to England</button>
+                            <button class="shipping-btn">Ship to Russia</button>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+
+       
+        </div>
+    </header>
+    <section class="section1">
+        <div class="main-buttons">
+            <button>
+                <span>Automobiles</span>
+            </button>
+            <button>
+                <Span>clothes and wear</Span>
+            </button>
+            <button>
+                <Span>Home interiors</Span>
+            </button>
+            <button>
+                <Span>Computer and tech</Span>
+            </button>
+            <button>
+                <Span>Tools, equipments</Span>
+            </button>
+            <button>
+                <Span>Sports and outdoor</Span>
+            </button>
+            <button>
+                <Span>Animal and pets</Span>
+            </button>
+            <button>
+                <Span>Machinery tools</Span>
+            </button>
+            <button>
+                <Span>More category</Span>
+            </button>
+        </div>
+        <div class="board">
+            <img src="images/Banner-board-800x420 2.jpg" alt="">
+        </div>
+        <div class="section1div3">
+            <div class="join-in-div">
+                <div class="user-div avenir">
+                    <img src="images/Avatar.jpg" alt="">
+                    <span>Hi user, Let's get started</span>
+                </div>
+                <div class="btns">
+                    <button class="joinin-btn">Join now</button>
+                    <button class="login-btn">Log in</button>
+                </div>
+
+            </div>
+            <div class="Get-US-off">
+                <span class="Get-US-off-span  avenir">Get US $10 off with a new supplier</span>
+            </div>
+            <div class="Send-quotes">
+                <span  class="sendquotes-span avenir">Send quotes with supplier preferences</span>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="section2">
+        <div class="deals">
+            <div class="deals-and-ffers">
+
+                <span class="deals-and-ffers-span">Deals and offers</span>
+                <span class="deals-and-ffers-span1">Hygiene equipments</span>
+
+                <div class="sales-time">
+                    <div class="time-div">
+                        <span id="days" class="time-number"></span>
+                        <span class="time">Days</span>
+
+                    </div>
+                    <div class="time-div"> 
+                        <span id="Hour" class="time-number"></span>
+                        <span class="time">Hour</span>
+
+                    </div>
+                    <div  class="time-div">
+                        <span id="Min" class="time-number"></span>
+                        <span class="time">Min</span>
+                    </div>
+                    <div class="lasttimediv">
+                        <span id="Sec" class="time-number"></span>
+                        <span class="time">Sec</span>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="hot-offers">
+                <div class="hot-offers-div">
+                    <img src="images/image 35.jpg" alt="">
+                    <div class="offer-names">
+                        <span>Smart watches</span>
+                        <span class="hot-offers-price">-25%</span>
+                    </div>
+
+                </div>
+                <div class="hot-offers-div">
+                    <img src="images/image 23.jpg" alt="">
+                    <div class="offer-names">
+                        <span>Laptops</span>
+                        <span class="hot-offers-price">-25%</span>
+                    </div>
+
+                </div>
+                <div class="hot-offers-div">
+                    <img class="gopro" src="images/image 28.jpg" alt="">
+                    <div class="offer-names">
+                        <span>GoPro cameras</span>
+                        <span class="hot-offers-price offer-gopro">-25%</span>
+                    </div>
+
+                </div>
+                <div class="hot-offers-div">
+                    <img src="images/image 29.jpg" alt="">
+                    <div class="offer-names">
+                        <span>Headphones</span>
+                        <span class="hot-offers-price">-25%</span>
+                    </div>
+
+                </div>
+                <div class="hot-offers-div">
+                    <img class="gopro" src="images/image 34.jpg" alt="">
+                    <div class="offer-names">
+                        <span>Canon Cameras</span>
+                        <span class="hot-offers-price">-25%</span>
+                    </div>
+
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="home-andoutdoor">
+            <img class="home-andoutdoor-img" src="images/image 92.jpg" alt="">
+            <div class="home-outdoor">
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Soft Chairs</span>
+                        <span class="from-price avenir">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 87.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Kitchen Mixer</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 88.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Coffee Maker</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 89.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Smart Watches</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 90.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Soft Chairs</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/rasm.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Home Appliances</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/rasmm.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Beds</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 93.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Sofa & Chair</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 94.jpg" alt="">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="home-andoutdoor">
+            <div>
+                <div class="secdon-board avenir">
+                    <span>Consumer electronics and gadgets</span>
+                    <button class=" avenir">Source Now</button>
+                </div>
+                <img class="home-andoutdoor-img1" src="images/boardlo.jpg" alt="">
+
+            </div>
+
+            <div class="home-outdoor">
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Soft Chairs</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 87.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Kitchen Mixer</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 88.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Coffee Maker</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 89.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Smart Watches</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 90.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Soft Chairs</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/rasm.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Home Appliances</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/rasmm.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Beds</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 93.jpg" alt="">
+
+                </div>
+                <div class="home-outdoor-divs">
+                    <div class="home-outdoor-divs-text">
+                        <span>Sofa & Chair</span>
+                        <span class="from-price">from USD 9</span>
+                    </div>
+
+                    <img src="images/image 94.jpg" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="rect-div">
+
+            <div class="easy-way">
+
+                <div class="easy-spans">
+                    <span class="An-easy avenir">An easy way to send requests to all suppliers</span>
+                    <span class="rect-lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</span>
+
+                </div>
+                <div class="send-quote">
+                    <span class="send-quote-spansend avenir">Send quote to suppliers</span>
+                    <div class="what-item-div">
+                        <span class="what-item avenir">What item you need?</span>
+                    </div>
+                    <div>
+                        <form>
+                            <input class="type-more-details" type="text" placeholder="  Type more details">
+                        </form>
+                    </div>
+                    <div class="chooseoption">
+                        <span class="quantity avenir">Quantity</span>
+                        <div class="chhoose">
+                            <button class="choose-btn" onclick="myFunction()">Choose type</button>
+                            <button class="pcs">Pcs</button>
+                            <div class="gadgets">
+                                <div id="myGadgets" class="gadgets-content">
+                                    <button class="pcss">PCs</button>
+                                    <button class="laptops">Laptops</button>
+                                    <button class="smart">Smartphones</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <Button class="send-inq">Send inquiry</Button>
+
+                    </div>
+ 
+                </div>
+
+            </div>
+            <img class="rectangle" src="images/Rectangle 299.jpg" alt="">
+
+
+
+
+        </div>
+    </section>
+    <section class="section3">
+        <span class="Recommended- avenir">Recommended Items</span>
+        <div class="recommendeditems">
+            <div class="recommendeditems-div">
+                <img src="images/bitmap.jpg" alt="">
+                <div>
+                    <span class="recommendeditems-div-price">$10.30</span>
+                    <span>T-shirts with multiple colors, for men</span>
+                </div>
+            </div>
+            <div class="recommendeditems-div">
+                <img src="images/2 1.jpg" alt="">
+                <div>
+                    <span class="recommendeditems-div-price">$10.30</span>
+                    <span>Jeans shorts for men blue color</span>
+                </div>
+            </div>
+            <div class="recommendeditems-div">
+                <img src="images/image 30.jpg" alt="">
+                <div>
+                    <span class="recommendeditems-div-price">$12.50</span>
+                    <span>Brown winter coat medium size</span>
+                </div>
+            </div>
+            <div class="recommendeditems-div">
+                <img src="images/image 24.jpg" alt="">
+                <div>
+                    <span class="recommendeditems-div-price">$34.00</span>
+                    <span>Jeans bag for travel for men</span>
+                </div>
+            </div>
+            <div class="recommendeditems-div">
+                <img src="images/image 26.jpg" alt="">
+                <div>
+                    <span class="recommendeditems-div-price">$99.00</span>
+                    <span>Leather bag</span>
+                </div>
+            </div>
+        </div>
+        <div class="recommendeditems">
+            <div class="recommendeditems-div-bottom">
+                <img src="images/try.jpg" alt="">
+                <div>
+                    <span class="recommendeditems-div-price">$9.99</span>
+                    <span>Canon camera black, 100x zoom</span>
+                </div>
+            </div>
+            <div class="recommendeditems-div-bottom">
+                <img src="images/image 86.jpg" alt="">
+                <div>
+                    <span class="recommendeditems-div-price">$8.99</span>
+                    <span>Headset for gaming with mic</span>
+                </div>
+            </div>
+            <div class="recommendeditems-div-bottom">
+                <img src="images/bag.jpg" alt="">
+                <div>
+                    <span class="recommendeditems-div-price">$10.30</span>
+                    <span>Smartwatch silver color modern</span>
+                </div>
+            </div>
+            <div class="recommendeditems-div-bottom">
+                <img src="images/dog.jpg" alt="">
+                <div>
+                    <span class="recommendeditems-div-price">$10.30</span>
+                    <span>Blue wallet for men leather metarfial</span>
+                </div>
+            </div>
+            <div class="recommendeditems-div-bottom">
+                <img src="images/cofe.jpg" alt="">
+                <div>
+                    <span class="recommendeditems-div-price">%10.30</span>
+                    <span>Jeans bag for travel for men</span>
+                </div>
+            </div>
+        </div>
+
+
+        <span class="Our-extra-services avenir">Our extra services</span>
+        <div class="extra-services">
+            <div>
+                <div class="extra-services-divs-div">
+                    <img class="services-image" src="images/image 108.jpg" alt="">
+                    <span class="extra-spans">Source from industry Hubs</span>
+                </div>
+                <img class="services-icon" src="images/search.jpg" alt="">
+            </div>
+            <div>
+                <div class="extra-services-divs-div">
+                    <img class="services-image" src="images/image 104.jpg" alt="">
+                    <span class="extra-spans">Customize Your Products</span>
+    
+                </div>
+                <img class="services-icon" src="images/inventory_2.jpg" alt="">
+
+            </div>
+            <div>
+                <div class="extra-services-divs-div">
+                    <img class="services-image" src="images/image 106.jpg" alt="">
+                    <span class="extra-spans-fast">Fast, reliable shipping by ocean or air</span>
+
+                </div>
+                <img class="services-icon" src="images/send.jpg" alt="">
+
+            </div>
+
+            <div>
+                <div class="extra-services-divs-div">
+                    <img class="services-image" src="images/image 107.jpg" alt="">
+                    <span class="extra-spans-product">Product monitoring and inspection</span>
+    
+                </div>
+                <img class="services-icon" src="images/security.jpg" alt="">
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <span class="supplies-span avenir">Suppliers by region</span>
+        <div class="Supplies-by-region">
+            <div>
+                <div class="Supplies-by-region-div">
+                    <img src="images/Property 1=AE.jpg" alt="">
+                    <div>
+                        <span>Arabic Emirates</span>
+                        <span>shopname.ae</span>
+                    </div>
+                </div>
+                <div class="Supplies-by-region-div">
+                    <img src="images/Property 1=DE.jpg" alt="">
+                    <div>
+                        <span>Denmark</span>
+                        <span>shopname.com.dk</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="Supplies-by-region-div">
+                    <img src="images/Property 1=AU.jpg" alt="">
+                    <div>
+                        <span>Australia</span>
+                        <span>shopname.au</span>
+                    </div>
+                </div>
+                <div class="Supplies-by-region-div">
+                    <img src="images/Property 1=FR.jpg" alt="">
+                    <div>
+                        <span>France</span>
+                        <span>shopname.fr</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="Supplies-by-region-div">
+                    <img src="images/Property 1=US.jpg" alt="">
+                    <div>
+                        <span>United States</span>
+                        <span>shopname.ae</span>
+                    </div>
+                </div>
+                <div class="Supplies-by-region-div">
+                    <img src="images/Property 1=AE.jpg" alt="">
+                    <div>
+                        <span>Arabic Emirates</span>
+                        <span>shopname.ae</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="Supplies-by-region-div">
+                    <img src="images/Property 1=RU.jpg" alt="">
+                    <div>
+                        <span>Russia</span>
+                        <span>shopname.ru</span>
+                    </div>
+                </div>
+                <div class="Supplies-by-region-div">
+                    <img src="images/Property 1=CN.jpg" alt="">
+                    <div>
+                        <span>China</span>
+                        <span>shopname.ae</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="Supplies-by-region-div">
+                    <img src="images/Property 1=IT.jpg" alt="">
+                    <div>
+                        <span>Italy</span>
+                        <span>shopname.it</span>
+                    </div>
+                </div>
+                <div class="Supplies-by-region-div">
+                    <img src="images/Property 1=GB.jpg" alt="">
+                    <div>
+                        <span>Great Britain</span>
+                        <span>shopname.com.uk</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <footer class="footer">
+
+        <div class="subs">
+            <span class="subs-span-subscribe avenir">Subscribe on our newsletter</span>
+            <span class="subs-span-getdaily">Get daily news on upcoming offers from many suppliers all over the world</span>
+            
+            <form>
+                <div class="form">
+                    <img class="email-img" src="images/email.jpg" alt="">
+                    <input class="email" type="text" placeholder="        Email">
+                    <button class="subs-button">Subscribe</button>
+
+                </div>
+
+            </form>
+            
+
+        </div>
+        <div class="footer-brand1">
+            <div class="footer-brand">
+                <img class="fot" src="images/logo-colored.jpg" alt="">
+                <span class="fotw">Best information about the company gies here but now lorem ipsum is</span>
+                <div class="social">
+                    <img src="images/facebook3.jpg" alt="Facebook">
+                    <img src="images/instagram3.jpg" alt="Instagram">
+                    <img src="images/youtube3.jpg" alt="Youtube">
+                    <img src="images/linkedin3.jpg" alt="Linkedin">
+                    <img src="images/twitter3.jpg" alt="Twitter">
+                </div>
+            </div>
+            <div class="About-us-div">
+                <div>
+                    <span class="about-us-span-firstrow avenir">About</span>
+                    <span class="about-us-span">About Us</span>
+                    <span class="about-us-span">Find store</span>
+                    <span class="about-us-span">Categories</span>
+                    <span class="about-us-span">Blogs</span>
+        
+                </div>
+                <div>
+                    <span class="about-us-span-firstrow avenir">Partnership</span>
+                    <span class="about-us-span">About Us</span>
+                    <span class="about-us-span">Find store</span>
+                    <span class="about-us-span">Categories</span>
+                    <span class="about-us-span">Blogs</span>
+        
+                </div>        
+                <div>
+                    <span class="about-us-span-firstrow avenir">Information</span>
+                    <span class="about-us-span">Help Center</span>
+                    <span class="about-us-span">Money Refund</span>
+                    <span class="about-us-span">Shipping</span>
+                    <span class="about-us-span">Contact us</span>
+        
+                </div>
+                <div>
+                    <span class="about-us-span-firstrow avenir">For users</span>
+                    <span class="about-us-span">Login</span>
+                    <span class="about-us-span">Register</span>
+                    <span class="about-us-span">Settings</span>
+                    <span class="about-us-span">My orders</span>
+
+
+        
+                </div>
+
+            </div>
+            <div class="get-app">
+                <span class=" avenir">Get App</span>
+
+                <img src="images/market-button.jpg" alt="">
+                <img src="images/playst.jpg" alt="">
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <script src="app.js"></script>
+        
+</body>
+</html>
